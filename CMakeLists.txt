@@ -7,4 +7,6 @@ add_executable(LogFind main.cpp
         src/Service.cpp
         include/Service.h
         src/ConditionLSortLogger.cpp
-        include/ConditionLSortLogger.h)
+        include/ConditionLSortLogger.h
+        src/ThreadPool.cpp
+        include/ThreadPool.h)
