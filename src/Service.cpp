@@ -9,7 +9,6 @@
 // 서비스가 시작됨
 void Service::Start()
 {
-
     if (StartContinueMessage())
     {
         if (InputLoggerData())
@@ -87,7 +86,7 @@ bool Service::InputLoggerData()
         regexs.push_back(regex);
     }
 
-    SleepCout("Enter the desired data storage file name");
+    SleepCout("Enter the desired data storage path.\nThe file name will be temporarily stored");
     std::getline(cin, outputFileName);
 
     outputFileName.erase(std::remove(outputFileName.begin(), outputFileName.end(), '"'), outputFileName.end());

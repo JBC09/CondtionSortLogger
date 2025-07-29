@@ -34,6 +34,7 @@ public:
     std::vector<std::pair<unsigned int, std::wstring>> Validate(const std::vector<std::string>& _regexs, std::vector<std::pair<unsigned int, std::wstring>> _inputTxtFileContent);
     void Threading();
     void WriteWebFile();
+    void styleSheet(std::wofstream &file);
 };
 
 
